@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCoursesFormController">
+   <children>
+      <Label layoutX="366.0" layoutY="14.0" text="Add Courses">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <TableView layoutX="14.0" layoutY="239.0" prefHeight="346.0" prefWidth="920.0">
+        <columns>
+          <TableColumn prefWidth="98.0" text="Id" />
+          <TableColumn prefWidth="181.0" text="Name" />
+            <TableColumn prefWidth="504.0" text="Description" />
+            <TableColumn prefWidth="136.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXTextField labelFloat="true" layoutX="34.0" layoutY="97.0" promptText="Courses Id" />
+      <JFXTextField labelFloat="true" layoutX="190.0" layoutY="97.0" prefHeight="25.0" prefWidth="275.0" promptText="Courses Name" />
+      <JFXTextField labelFloat="true" layoutX="482.0" layoutY="97.0" prefHeight="25.0" prefWidth="418.0" promptText="Courses Description" />
+      <JFXTextField labelFloat="true" layoutX="34.0" layoutY="152.0" prefHeight="25.0" prefWidth="192.0" promptText="Courses Price" />
+      <JFXButton layoutX="803.0" layoutY="152.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE" />
+      <JFXButton layoutX="695.0" layoutY="152.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: green;" text="Update" textFill="WHITE" />
+      <JFXButton layoutX="586.0" layoutY="152.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>
